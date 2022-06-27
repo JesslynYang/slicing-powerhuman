@@ -32,6 +32,12 @@
 
         background: $bg-light;
         border-radius: 26px;
+
+        margin-bottom: 14px;
+
+        @include xl {
+            margin-bottom: 10px;
+        }
     }
 
     &values {
