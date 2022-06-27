@@ -181,6 +181,12 @@ aside #toggle-navbar {
   padding: 27px;
   background: #fff;
   border-radius: 26px;
+  margin-bottom: 14px;
+}
+@media (min-width: 1200px) {
+  .statistics-card {
+    margin-bottom: 10px;
+  }
 }
 .statistics-values {
   font-weight: 700;
