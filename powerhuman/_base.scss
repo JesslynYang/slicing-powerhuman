@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+$primary: #4640DE;
+$secondary: #ABB3C4;
+$bg: #F8F8FA;
+$bg-light: #fff;
+$text: #121F3E;
+$text-light: #fff;
+$aside: #fff;
+$default: transparent;
+
+html, body {
+    font-family: 'Poppins';
+    font-style: normal;
+    background-color: $bg;
+    overflow-x: hidden;
+}
+
+@mixin flex-sc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-bc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%utility-reset {
+    background-color: $default;
+    border: none;
+    outline: none;
+}
+@mixin button {
+    @extend %utility-reset;
+}
+
+@mixin input {
+    @extend %utility-reset
+}
+
+.screen-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+
+    display: block;
+
+}

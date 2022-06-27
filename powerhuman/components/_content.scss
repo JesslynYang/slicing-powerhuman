@@ -1,0 +1,120 @@
+.content {
+    padding: 0px 28px 50px 28px;
+}
+
+.content- {
+    &title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        
+        color: $text;
+    }
+
+    &title:first-of-type {
+        margin-top: 30px;
+    }
+
+    &desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $secondary;   
+    }
+}
+
+.statistics- {
+    &card {
+
+       width: 100%;
+       padding: 27px;
+
+        background: $bg-light;
+        border-radius: 26px;
+    }
+
+    &values {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+
+        color: $text;
+
+    }
+
+    &list {
+        margin-top: 50px;
+
+        img {
+            width: 36px;
+            height: 36px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        img:not(:first-child) {
+            margin-left: -12px;
+        }
+    }
+}
+
+.document- {
+    &card {
+        padding: 24px;
+        background: $bg-light;
+        border-radius: 26px;
+
+        margin-bottom: 56px;
+
+        @mixin lg {
+            margin-bottom: 0;
+        }
+
+        .document-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .document-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 16px;
+            }
+        }
+
+        .document-item:not(:last-child) {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #F7F7FA;
+        }
+    }
+
+    &title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $text;
+    }
+
+    &desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $secondary;
+
+    }
+}
+
+.btn-statistics {
+    @include flex-cc;
+    @include button;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    background: $bg;
+}

@@ -1,0 +1,59 @@
+.col-navbar {
+    transition: 1s;
+}
+
+.nav {
+    @include flex-bc;
+
+    padding: 50px 28px 24px 28px;
+
+    .btn-notif {
+        @include button;
+
+        width: 46px;
+        height: 46px;
+
+        background: $bg-light;
+        border-radius: 50%;
+        
+        margin-left: 20px;
+    }
+}
+
+.nav- {
+    &title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+
+        color: $text;
+    }
+
+    &input-group {
+        @include flex-sc;
+
+        height: 46px;
+        padding: 0 18px;
+
+        background: $bg-light;
+        border-radius: 100px;
+
+        .btn-nav-input {
+            @include button;
+        }
+    }
+
+    &input {
+        @include flex-sc;
+        @include input;
+        width: 100%;
+
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: $secondary;
+
+    }
+}
