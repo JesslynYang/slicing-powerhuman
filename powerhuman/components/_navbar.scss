@@ -74,12 +74,16 @@
             width: auto;
         }
 
+        @include md {
+            width: 400px !important;
+        } 
+
         @include lg {
-            min-width: 400px;
+            width: 400px;
         } 
 
         @include xl {
-            min-width: 500px;
+            width: 500px;
         } 
     }
 
