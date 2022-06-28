@@ -1,0 +1,84 @@
+.employee- {
+    &stat {
+        height: 82px;
+
+        .content-desc {
+            line-height: 0;
+        }
+
+        .statistics-value {
+            line-height: 0;
+        }
+    }
+    
+    &card {
+        @include flex-cc;
+
+        height: 280px;
+
+        background: $bg-light;
+        border-radius: 26px;
+
+        padding: 40px 0;
+
+        margin-bottom: 40px;
+    }
+
+    &img {
+        width: 70px;
+        height: 70px;
+    }
+
+    &name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        /* identical to box height */
+        text-align: center;
+
+        color: $text;
+    }
+
+    &role {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        text-align: center;
+
+        color: $secondary;
+    }
+
+    &status {
+
+        &>* {
+            margin: 0 2px;
+        }
+
+        &.verified {
+            color: #2ED16C;
+        }
+
+        &.unverified {
+            text-decoration-line: underline;
+
+            color: #4640DE;
+        }
+
+        span,
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &status-image {
+        @include flex-cc;
+
+        img {
+
+        }
+    }
+
+}

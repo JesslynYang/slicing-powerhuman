@@ -39,6 +39,12 @@
        width: 100%;
        padding: 27px;
 
+       &.simple {
+            padding: 24px;
+
+            
+       }
+
         background: $bg-light;
         border-radius: 26px;
 
@@ -47,6 +53,7 @@
         @include xl {
             margin-bottom: 10px;
         }
+
     }
 
     &value {
@@ -55,7 +62,6 @@
         line-height: 48px;
         
         color: $text;
-
     }
 
     &list {
