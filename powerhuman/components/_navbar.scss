@@ -20,7 +20,7 @@
     .btn-notif {
         @include button;
 
-        width: 52px;
+        width: 46px;
         height: 46px;
 
         background: $bg-light;
@@ -31,6 +31,10 @@
         img {
             width: 24px;
             height: 24px;
+        }
+
+        @include lg {
+            width: 52px;
         }
 
     }
