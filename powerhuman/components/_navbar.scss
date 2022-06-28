@@ -4,19 +4,35 @@
 
 .nav {
     @include flex-bc;
+    flex-wrap: wrap;
 
-    padding: 50px 28px 24px 28px;
+    padding: 50px 14px 24px 14px;
+    
+    
+    @include md {
+        flex-wrap: nowrap;
+    }
+    
+    @include xl {
+        padding: 50px 64px 24px 0px;
+    }
 
     .btn-notif {
         @include button;
 
-        width: 46px;
+        width: 52px;
         height: 46px;
 
         background: $bg-light;
         border-radius: 50%;
         
         margin-left: 20px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
     }
 }
 
@@ -27,13 +43,24 @@
         line-height: 48px;
 
         color: $text;
+
+    }
+
+    &input-container {
+        width: 100%;
+        
+        @include md {
+            width: auto;
+        }
     }
 
     &input-group {
-        @include flex-sc;
+        @include flex-bc;
 
         height: 46px;
         padding: 0 18px;
+
+        width: 100%;
 
         background: $bg-light;
         border-radius: 100px;
@@ -46,14 +73,20 @@
     &input {
         @include flex-sc;
         @include input;
-        width: 100%;
 
         font-style: italic;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 18px;
 
         color: $secondary;
+
+
+        @include sm {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+        }
 
     }
 }

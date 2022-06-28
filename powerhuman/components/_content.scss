@@ -1,5 +1,14 @@
 .content {
-    padding: 0px 28px 50px 28px;
+    // padding: 0px 28px 50px 28px;
+    // padding: 50px 64px 24px 0px;
+
+    padding: 10px 14px 24px 14px;
+    
+    
+    @include xl {
+        padding: 0px 64px 0px 0px;
+    }
+
 }
 
 .content- {
@@ -12,7 +21,7 @@
     }
 
     &title:first-of-type {
-        margin-top: 30px;
+        margin-top: 5px;
     }
 
     &desc {
@@ -52,15 +61,83 @@
     &list {
         margin-top: 50px;
 
+        @include flex-sc;
+
+    }
+
+    &image {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+
+        &:not(:last-child) {
+            margin-right: -12px;
+        }
+    }
+
+    &icon {
+        @include flex-cc;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+
         img {
-            width: 36px;
-            height: 36px;
-            border: 2px solid white;
-            border-radius: 50%;
+            width: 18px;
+            height: 18px;
         }
 
-        img:not(:first-child) {
-            margin-left: -12px;
+        span {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        &:not(:last-child) {
+            margin-right: -12px;
+        }
+
+        &.award {
+            background: #F4F9EC;
+        }
+
+        &.box {
+            background: #ECE9FF;
+        }
+        
+        &.globe {
+            background: #ECF7F9;
+        }
+        
+        &.target {
+            background: #FFDDED;
+        }
+
+        &.one {
+            background: #ECE9FF;
+            color: #877AD8;
+        }
+
+        &.two {
+            background: #FFFBEC;
+            color: #FED54E;
+        }
+
+        &.three {
+            background: #ECF7F9;
+            color: #7AC9D8;
+        }
+
+        &.four {
+            background: #FEF6EC;
+            color: #F9AC44;
+        }
+
+        &.five {
+            background: #F4F9EC;
+            color: #9DC454;
         }
     }
 }
@@ -83,9 +160,36 @@
             align-items: center;
 
             .document-icon {
+                @include flex-cc;
                 width: 60px;
                 height: 60px;
                 margin-right: 16px;
+                border-radius: 50%;
+
+                &.award {
+                    background: #F4F9EC;
+                }
+        
+                &.box {
+                    background: #ECE9FF;
+                }
+                
+                &.globe {
+                    background: #ECF7F9;
+                }
+                
+                &.target {
+                    background: #FFDDED;
+                }
+
+                &.database {
+                    background: #FFF3E9;
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
 
@@ -99,17 +203,26 @@
     &title {
         font-weight: 600;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 14px;
+
+        margin-top: 2px;
 
         color: $text;
+
+        // margin-bottom: -.001px !important;
     }
 
     &desc {
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        // line-height: 24px;
 
         color: $secondary;
+
+        margin: 0;
+
+        // margin-top: 2px !important;
+
 
     }
 }
