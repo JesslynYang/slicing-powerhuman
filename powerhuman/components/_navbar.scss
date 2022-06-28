@@ -71,6 +71,7 @@
 
         .btn-nav-input {
             @include button;
+            width: auto;
         }
 
         @include lg {
@@ -92,6 +93,8 @@
         line-height: 18px;
 
         color: $secondary;
+
+        width: 100%;
 
 
         @include sm {
