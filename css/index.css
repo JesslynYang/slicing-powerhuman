@@ -134,7 +134,7 @@ aside #toggle-navbar {
   }
 }
 .nav .btn-notif {
-  width: 52px;
+  width: 46px;
   height: 46px;
   background: #fff;
   border-radius: 50%;
@@ -143,6 +143,11 @@ aside #toggle-navbar {
 .nav .btn-notif img {
   width: 24px;
   height: 24px;
+}
+@media (min-width: 992px) {
+  .nav .btn-notif {
+    width: 52px;
+  }
 }
 
 .nav-title {
@@ -168,6 +173,16 @@ aside #toggle-navbar {
   width: 100%;
   background: #fff;
   border-radius: 100px;
+}
+@media (min-width: 992px) {
+  .nav-input-group {
+    min-width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-input-group {
+    min-width: 500px;
+  }
 }
 .nav-input {
   display: flex;
@@ -224,7 +239,7 @@ aside #toggle-navbar {
     margin-bottom: 10px;
   }
 }
-.statistics-values {
+.statistics-value {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;

@@ -72,6 +72,14 @@
         .btn-nav-input {
             @include button;
         }
+
+        @include lg {
+            min-width: 400px;
+        } 
+
+        @include xl {
+            min-width: 500px;
+        } 
     }
 
     &input {
