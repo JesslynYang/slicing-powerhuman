@@ -554,6 +554,10 @@ aside #toggle-navbar {
   background: #fff;
   border-radius: 26px;
   margin-bottom: 12px;
+  box-sizing: border-box;
+}
+#team .team-option-card.selected {
+  border: 2px solid #4640DE;
 }
 #team .team-option-card.one .team-option-img {
   background-color: #ECE9FF;
