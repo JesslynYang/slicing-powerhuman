@@ -9,6 +9,13 @@ $text-light: #fff;
 $aside: #fff;
 $default: transparent;
 
+$light-purple: #ECE9FF; 
+$light-pink: #FFDDED;
+$light-blue: #ECF7F9; 
+$light-green: #F4F9EC; 
+
+// Reset
+
 html, body {
     font-family: 'Poppins';
     font-style: normal;
@@ -42,6 +49,10 @@ html, body {
 }
 @mixin button {
     @extend %utility-reset;
+}
+@mixin link {
+    @extend %utility-reset;
+    text-decoration: none;
 }
 
 @mixin input {
