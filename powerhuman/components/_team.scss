@@ -134,6 +134,8 @@
           margin-bottom: 12px;
           box-sizing: border-box;
 
+          cursor: pointer;
+
           &.selected {
             border: 2px solid $primary;
           }

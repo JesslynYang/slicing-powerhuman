@@ -555,6 +555,7 @@ aside #toggle-navbar {
   border-radius: 26px;
   margin-bottom: 12px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 #team .team-option-card.selected {
   border: 2px solid #4640DE;
